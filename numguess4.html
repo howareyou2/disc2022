@@ -15,10 +15,11 @@ a = []; b = []; c = []
 k = 0
 hint = ""
 while ( true ) {
-  x = prompt(str + a + " " + hint)
   if(x == null)
     break
   a[k] = prompt(str + a + " " + hint)
+  if(a[k] == null)
+    break
   c[k] = num
   b[k] = k+1
   if ( num == a[k] ) {
