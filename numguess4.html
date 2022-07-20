@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>if</title>
+<title>numguess</title>
 </head>
 <body>
 <div style="width:80vw"><canvas id="myChart"></canvas></div>
@@ -8,16 +8,14 @@
 <script>
 var num = Math.floor(Math.random()*100)
 document.write(num)
-str = "0-99 »çÀÌÀÇ °ªÀ» ÀÏ·ÂÇÏ½Ã¿À. "
-a = []
-b = []
-c = []
+str = "0-99 사이의 값을 일력하시오. "
+a = []; b = []; c = []
 k = 0
 hint = ""
 while ( true ) {
   a[k] = prompt(str + a + " " + hint)
-  b[k] = k+1
   c[k] = num
+  b[k] = k+1
   if ( num == a[k] ) {
     document.write("Congratulation~ You guessed it at " + (k+1) + " times")
     document.write("<br>Your input data is " + a.toString())
@@ -33,18 +31,19 @@ datainfo = {
   labels : b,
   datasets : [{
     label : 'Number guess',
-    backgroundColor : ['grey', 'red'],
+    backgroundColor : ['gray', 'red'],
     borderColor : 'blue',
     data : a,
     tension : 0.5
-  },
-  {
+   },
+   {
     label : 'Answer',
-    backgroundColor : ['grey', 'red'],
+    backgroundColor : ['gray', 'red'],
     borderColor : 'blue',
     data : c,
     tension : 0.5
-  }]
+   },
+   ]
 }
 const config = {
   type : 'line',
