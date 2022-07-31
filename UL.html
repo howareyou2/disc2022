@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+    .active{ background: orange; }
+</style>
+<button>목록 추가</button>
+<ul>
+</ul>
+<script>
+var list = document.getElementsByTagName('ul')[0];
+var addBtn = document.getElementsByTagName('button')[0]
+addBtn.addEventListener('click', function(){
+		var txt = prompt('제목 입력');
+		list.innerHTML += '<li>' + txt + '</li>';
+	});
+list.addEventListener('click', activeItem); 
+
+function activeItem(event){ 
+    if(event.target.nodeName == 'LI'){	
+        for(var i = 0; i < event.target.parentNode.children.length; i++){
+            event.target.parentNode.children[i].removeAttribute('class');
+        }
+        event.target.setAttribute('class', 'active');			
+    }
+}
+</script>
+</head>
+<body>
+</body>
+</html>
