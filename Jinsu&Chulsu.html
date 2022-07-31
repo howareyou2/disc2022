@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+jinsu = {name: 'Jinsu', age: 21}
+chulsu = {name: 'Chulsu', age: 20}
+window.onload =function(){	
+    event.target.onclick=function(){
+        event.target.innerHTML = (jinsu.age + chulsu.age)/2			
+        jinsu.age += 1
+        chulsu.age += 1
+    }		
+}
+
+</script>
+</head>
+<body>
+<button>sum</button>
+<button>sum</button>
+<button>sum</button>
+</body>
+</html>
