@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+    cbrt10try = []
+    trialnum = []
+    cbrt10val = []
+    high = 3
+    low = 2
+    delta = 0.00000001
+    idx=0
+    result=0
+    for ( k=0 ; k<10000000 ; k++ ) {
+      cbrt10try[k] = (high + low)/2
+      cbrx = cbrt10try[k] * cbrt10try[k] * cbrt10try[k]
+      trialnum[k] = k+1
+      cbrt10val[k] = Math.cbrt(10)
+      if ( cbrx > 10 ) high = cbrt10try[k]
+      else if ( cbrx < 10 ) low = cbrt10try[k]
+      if ( Math.abs(10-cbrx) < delta )   break
+    }
+    window.onload =function(){
+        document.getElementsByTagName('h1')[0].innerHTML = '시도 횟수: ' + trialnum.length + ', 세제곱근의 값: ' + cbrt10try[cbrt10try.length -1]
+    }
+</script>
+</head>
+<body>
+    <h1></h1>
+</body>
+</html>
