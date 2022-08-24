@@ -130,7 +130,7 @@
 
 	.change-body{
 		font-family: 'Jua', sans-serif;
-		font-size: 20px;
+		font-size: large;
 		color:rgb(3, 154, 241);
 		background: rgba(143, 214, 255, 0.5);
 		border:0;
@@ -139,7 +139,7 @@
 
 	.change-color{
 		font-family: 'Jua', sans-serif;
-		font-size: 20px;
+		font-size: x-large;
 		color:rgb(3, 154, 241);
 		background: rgba(143, 214, 255, 0.5);
 		border:0;
@@ -148,7 +148,7 @@
 
 	.change-face{
 		font-family: 'Jua', sans-serif;
-		font-size: 20px;
+		font-size: x-large;
 		color:rgb(3, 154, 241);
 		background: rgba(143, 214, 255, 0.5);
 		border:0;
@@ -157,7 +157,7 @@
 
 	.change-Acc{
 		font-family: 'Jua', sans-serif;
-		font-size: 20px;
+		font-size: x-large;
 		color:rgb(3, 154, 241);
 		background: rgba(143, 214, 255, 0.5);
 		border:0;
@@ -168,7 +168,7 @@
 		right: 0;
     	margin-top: 30vmax;
     	margin-right: 8vmax;
-    	width: 18vmax; height: 6vmax;
+    	width: 35%; height: 6vmax;
     	position: absolute;
 		border-collapse:collapse;
     	border-radius: 10px;
@@ -176,6 +176,7 @@
 		font-family: 'Jua', sans-serif;
 		font-size: x-large;
 		color:rgb(3, 154, 241);
+		background: none;
 	}
 	
 	
