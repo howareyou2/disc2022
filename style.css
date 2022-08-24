@@ -118,8 +118,9 @@
 		right: 0;
     	margin-top: 5vmax;
     	margin-right: 8vmax;
-    	width: 18vmax; height: 23vmax;
+    	width: 35%; height: 40%;
     	position: absolute;
+		table-layout: fixed;
 		border-collapse:collapse;
     	border-radius: 10px;
     	border: 5px dotted rgb(143, 214, 255);
@@ -127,6 +128,41 @@
 		color:rgb(3, 154, 241);
 	}
 
+	.change-body{
+		font-family: 'Jua', sans-serif;
+		font-size: 20px;
+		color:rgb(3, 154, 241);
+		background: rgba(143, 214, 255, 0.5);
+		border:0;
+		border-radius: 100px;
+	}
+
+	.change-color{
+		font-family: 'Jua', sans-serif;
+		font-size: 20px;
+		color:rgb(3, 154, 241);
+		background: rgba(143, 214, 255, 0.5);
+		border:0;
+		border-radius: 100px;
+	}
+
+	.change-face{
+		font-family: 'Jua', sans-serif;
+		font-size: 20px;
+		color:rgb(3, 154, 241);
+		background: rgba(143, 214, 255, 0.5);
+		border:0;
+		border-radius: 100px;
+	}
+
+	.change-Acc{
+		font-family: 'Jua', sans-serif;
+		font-size: 20px;
+		color:rgb(3, 154, 241);
+		background: rgba(143, 214, 255, 0.5);
+		border:0;
+		border-radius: 100px;
+	}
 
 	#btn_message{
 		right: 0;
