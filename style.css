@@ -166,9 +166,10 @@
 
 	#btn_message{
 		right: 0;
-    	margin-top: 30vmax;
+		bottom:0;
+    	margin-bottom: 10%;
     	margin-right: 8vmax;
-    	width: 35%; height: 6vmax;
+    	width: 35%; height: 10%;
     	position: absolute;
 		border-collapse:collapse;
     	border-radius: 10px;
