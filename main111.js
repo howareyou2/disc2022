@@ -146,6 +146,6 @@ function changeAcc (Acc){
 //Message
 function txt(){
 	var txt = prompt('용기를 주는 Message를 입력해보세요!');
-	board.innerHTML +='<h2>'+txt+'<h2>';
+	board.innerHTML +='<h1>'+txt+'</h1>';
 }
 	
