@@ -1,0 +1,145 @@
+	*{ margin: 0; }
+	body{ 
+		padding: 0px 50px;
+        background-image: url(Img/back.png);
+        background-size: cover;
+	}
+	#banner_wrap{
+		position: relative;
+		width: 500px;
+	}
+
+	/* 배너 표시 상태 */
+	#banner.active{
+		text-align:center;
+		font-family: 'Jua', sans-serif;
+	    height: 250px;
+	    border: 5px dotted rgb(3, 154, 241);
+		background-color: rgba(255,255,255,0.3);
+	}
+
+	/* 배너 비표시 상태 */	
+	#banner{
+		text-align:center;
+		font-family: 'Jua', sans-serif;
+	    width:500px;
+	    height: 0px;
+	    position: relative;
+	    overflow: hidden;
+	    background-color: rgba(255,255,255,0.3);
+	    
+	    box-sizing: border-box;
+	    transition-duration: 0.5s;
+	}
+	#banner:hover{
+		cursor: pointer;
+	}
+	#banner img{
+	    display: block;
+	    position: absolute;
+	}
+
+	/* 사운드 on/off 버튼 */
+	#sound_btn{
+		position: absolute;
+		left: 10px; bottom: 10px;
+		outline: none;
+	}
+
+	/* 배너 닫기/열기 버튼 */
+	#toggle{
+		position: relative;
+		right: 0; 
+		
+		background: rgb(3, 154, 241);
+		color: white;
+		font-size: 12px; 
+		line-height: 18px;
+		padding: 0 5px;
+		text-decoration: none;
+	}
+	#toggle:hover{ text-decoration: underline; }
+
+	#title{
+		text-align:center;
+		font-family: 'Jua', sans-serif;
+		font-size: 100px;
+		color:rgb(143, 214, 255);
+		text-shadow: 5px 5px 3px #fff;
+	}
+
+	/*옷입히기 부분*/
+	.main-Div{
+		width: 70vmax;
+		height: 50vmax;
+		position: relative;
+		border: 6px solid rgb(143, 214, 255);
+		border-radius: 10px;
+		margin: 1% 10%;
+		background-color: rgba(255, 255, 255, 0.767);
+	}
+	.Character{
+		position: absolute;
+		top:3%;
+		margin: 30px;
+		width: 45%;
+		height: 85%;
+		border: 5px dotted rgb(143, 214, 255);
+		border-radius: 10px;
+	}
+	.face{
+		position: absolute;
+		top:3%;
+		margin: 30px;
+		width: 45%;
+		height: 85%;
+	}
+	.Acc{
+		position: absolute;
+		top:3%;
+		margin: 30px;
+		width: 45%;
+		height: 85%;
+	}
+	.Message_here{
+		position: absolute;
+		top:5%;
+		margin-top: 50px;
+		margin-left: 50px;
+		width: 40%;
+		height: 85%;
+		font-family: 'Jua', sans-serif;
+		text-align: center;
+		color:rgb(255, 255, 255);
+		text-shadow: 1px 1px 10px rgb(3, 154, 241);
+	}
+	
+	#func{
+		right: 0;
+    	margin-top: 5vmax;
+    	margin-right: 8vmax;
+    	width: 18vmax; height: 23vmax;
+    	position: absolute;
+		border-collapse:collapse;
+    	border-radius: 10px;
+    	border: 5px dotted rgb(143, 214, 255);
+		font-family: 'Jua', sans-serif;
+		color:rgb(3, 154, 241);
+	}
+
+
+	#btn_message{
+		right: 0;
+    	margin-top: 30vmax;
+    	margin-right: 8vmax;
+    	width: 18vmax; height: 6vmax;
+    	position: absolute;
+		border-collapse:collapse;
+    	border-radius: 10px;
+    	border: 5px dotted rgb(143, 214, 255);
+		font-family: 'Jua', sans-serif;
+		font-size: x-large;
+		color:rgb(3, 154, 241);
+	}
+	
+	
