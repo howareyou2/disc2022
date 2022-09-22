@@ -1,3 +1,10 @@
+//popup
+function close() {
+	document.querySelector(".window").className = "background";
+   }
+ 
+document.querySelector("#close").addEventListener("click", close);
+
 var banner = document.getElementById('banner'),			// 배너 본체
 	img = banner.getElementsByTagName('img'),			// 스프라이트 이미지
 	toggle = document.getElementById('toggle'),			// 배너 토글 버튼
@@ -144,8 +151,9 @@ function changeAcc (Acc){
 }
 
 //Message
-function txt(){
+btn.onclick=function(){
 	var txt = prompt('용기를 주는 Message를 입력해보세요!');
 	board.innerHTML +='<h1>'+txt+'</h1>';
 }
+
 	
