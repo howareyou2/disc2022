@@ -1,1 +1,1 @@
-# disc2022
+# https://howareyou2.github.io/disc2022/
